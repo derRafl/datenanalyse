@@ -9,6 +9,14 @@ func Min(values []int) int {
 	   Jedes Mal, wenn Sie ein neues Minimum finden, speichern Sie es in der Variablen min.
 	*/
 	// TODO
+
+	for _, element := range values{
+
+		if min> element{
+			min = element
+		}
+
+	}
 	return min
 }
 
@@ -20,6 +28,14 @@ func Max(values []int) int {
 	   Gehen Sie analog zu Min vor.
 	*/
 	// TODO
+
+	for _, element := range values{
+
+		if max < element{
+			max = element
+		}
+
+	}
 	return max
 }
 
@@ -35,6 +51,11 @@ func ValueRange(values []int) []int {
 	   Minimum und Maximum zu result hinzu.
 	*/
 	// TODO
+
+	for i := Min(values); i<= Max(values); i++{
+		
+		result = append(result, i)
+	}
 	return result
 
 }
@@ -44,6 +65,10 @@ func ValueRange(values []int) []int {
 func Sum(values []int) int {
 	sum := 0
 	// TODO
+
+	for _, element := range values{
+		sum += element
+	}
 	return sum
 }
 
@@ -52,5 +77,9 @@ func Sum(values []int) int {
 func Product(values []int) int {
 	product := 1
 	// TODO
+
+	for _, element := range values{
+		product = product * element
+	}
 	return product
 }

@@ -1,5 +1,6 @@
 package dice
 
+
 // RollSingleDieOnce simuliert einen Würfelwurf: Die Funktion liefert eine Zufallszahl zwischen 1 und 6.
 func RollSingleDieOnce() int {
 	// TODO
